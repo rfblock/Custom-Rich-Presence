@@ -26,7 +26,7 @@ Finally, install the required dependencies with `pip install flask pypresence`
 
 Create an App
 --------------
-Go to the (Discord Developer Portal)[https://discord.com/developers/applications] and click on `New Application` in the top right.
+Go to the [Discord Developer Portal](https://www.discord.com/developers/applications) and click on `New Application` in the top right.
 Pick a name and then create your app.
 The name of your app will be shown on your status as **Playing** app name
 
