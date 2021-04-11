@@ -48,3 +48,4 @@ To use the image, set the value of `large_image` or `small_image` to your image 
   - Note that uploading images may take up to 10 minutes to upload  
 - The app will automatically remove an invalid party_size or invalid buttons
 - RPC May take a long time to connect when starting
+- Buttons will work for other people, but you cannot click your own button
