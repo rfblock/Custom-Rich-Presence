@@ -3,12 +3,12 @@ Customize Discord rich presence on localhost
 
 Table of Contents
 =================
-1. [Requirements](#Requirements)
-2. [Setup](#Setup)  
-   2.1 [Create an App](#Create-an-App)  
-   2.2 [Configure options.py](#Configure-options.py)  
-   2.3 [Run the app](#Run-the-app) 
-3. [Notes](#Notes)
+1. [Requirements](#requirements)
+2. [Setup](#setup)  
+   2.1 [Create an App](#create-an-app)  
+   2.2 [Configure options.py](#configure-optionspy)  
+   2.3 [Run the app](#run-the-app) 
+3. [Notes](#notes)
 
 Requirements
 ============
