@@ -8,7 +8,7 @@ Table of Contents
    2.1 [Create an App](#create-an-app)  
    2.2 [Configure options.py](#configure-optionspy)  
    2.3 [Run the app](#run-the-app)
-3. [Setup for Windows](#setup - Windows 10) 
+3. [Setup for Windows](#setup for Windows 10) 
 3. [Notes](#notes)
 
 Requirements
@@ -43,8 +43,8 @@ Run the app
 -----------
 Run the app with the command `python3 app.py`, this will start flask on localhost:8081 by default. To change the RPC options, go to localhost:8081 and fill in the values.
 
-Setup - Windows 10
-==================
+Setup for Windows 10
+====================
 Install Dependencies
 --------------------
 First, create a virtual environment by running `python3 -m venv .`
