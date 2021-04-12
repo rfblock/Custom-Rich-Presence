@@ -5,11 +5,16 @@ Table of Contents
 =================
 1. [Requirements](#requirements)
 2. [Setup](#setup)  
-   2.1 [Create an App](#create-an-app)  
-   2.2 [Configure options.py](#configure-optionspy)  
-   2.3 [Run the app](#run-the-app)
-3. [Setup for Windows](#setup-for-windows-10) 
-3. [Notes](#notes)
+   2.1 [Install Dependencies](#install-dependencies)  
+   2.2 [Create an App](#create-an-app)  
+   2.3 [Configure options.py](#configure-optionspy)  
+   2.4 [Run the app](#run-the-app)  
+3. [Setup for Windows](#setup-for-windows-10)
+   3.1 [Install Dependencies](#install-dependencies-1)  
+   3.2 [Create an App](#create-an-app-1)  
+   3.3 [Configure options.py](#create-an-app-1)  
+   3.4 [Run the app](#run-the-app-1)
+5. [Notes](#notes)
 
 Requirements
 ============
@@ -47,7 +52,7 @@ Setup for Windows 10
 ====================
 Install Dependencies
 --------------------
-First, create a virtual environment by running `python3 -m venv .`
+First, create a virtual environment by running `py -m venv .`
 Then, enable the virtual environment by running `Scripts\activate.bat`
 Finally, install the required dependencies with `py -m pip install flask pypresence`
 
