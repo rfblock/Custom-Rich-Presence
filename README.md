@@ -8,7 +8,7 @@ Table of Contents
    2.1 [Create an App](#create-an-app)  
    2.2 [Configure options.py](#configure-optionspy)  
    2.3 [Run the app](#run-the-app)
-3. [Setup for Windows](#setup-or-windows 10) 
+3. [Setup for Windows](#setup-for-windows-10) 
 3. [Notes](#notes)
 
 Requirements
