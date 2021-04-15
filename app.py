@@ -1,6 +1,8 @@
-from pypresence import Presence
 from flask import Flask, render_template, request
-from options import options, client_id
+import json
+from options import options, client_id, application_name
+from pypresence import Presence
+import requests
 
 RPC = Presence(client_id)
 print('Connecting to RPC')
@@ -18,8 +20,7 @@ def __get_party_size(kwargs):
 	return True
 
 def __get_buttons(kwargs):
-	values = []
-	values.extend([options[i] for i in ['button-label-1', 'button-url-1', 'button-label-2', 'button-url-2']])
+	values = [options[i] for i in ['button-label-1', 'button-url-1', 'button-label-2', 'button-url-2']]
 	if not (values[2] or values[3]): del values[2:4]
 	if not (values[0] or values[1]): del values[0:2]
 	buttons = [] if values else None
@@ -56,6 +57,22 @@ def setstatus():
 @app.route('/getstatus')
 def getstatus():
 	return options
+
+@app.route('/getappinfo')
+def getappinfo():
+	info = {
+		'client_id': client_id,
+		'application_name': application_name
+	}
+	return json.dumps(info), 200
+
+@app.route('/getassets')
+def getassets():
+	assets = json.loads(requests.get(f'https://discord.com/api/v8/oauth2/applications/{client_id}/assets').content.decode('utf-8'))
+	keys = {}
+	for asset in assets:
+		keys[asset['name']] = asset['id']
+	return json.dumps(keys), 200
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', port='8081', debug=True)

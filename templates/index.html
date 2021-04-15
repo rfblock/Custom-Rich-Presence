@@ -3,6 +3,7 @@
 	<head>
 		<title>Discord Rich Presence</title>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" href="static/styles/index.css">
 	</head>
 	<body>
 		<div id="inputs-wrapper">
@@ -11,9 +12,9 @@
 			<input class="input-option" id="details"><br>
 			<input class="input-option" id="start">
 			<input class="input-option" id="end"><br>
-			<input class="input-option" id="large_image">
+			<select class="input-option select-option" id="large_image">
 			<input class="input-option" id="large_text"><br>
-			<input class="input-option" id="small_image">
+			<select class="input-option select-option" id="small_image">
 			<input class="input-option" id="small_text"><br>
 			<input class="input-option" id="party_id">
 			<input class="input-option" id="party_min">
@@ -27,6 +28,57 @@
 			<input class="input-option" id="button-url-2"><br>
 			<input class="input-option" id="instance"><br>
 			<button type="button" id="submit-options">Update</button>
+		</div>
+		<div id="user-popout-wrapper">
+			<div id="header-wrapper">
+				<div id="header">
+					<div id="avatar-wrapper">
+						<div id="avatar">
+							<div id="avatar-image"></div>
+							<div id="avatar-online"></div>
+						</div>
+					</div>
+					<div id="header-text">
+						<div id="header-tag">
+							<span id="username" contenteditable="true">Username</span><span id="tag" contenteditable="true">#1234</span>
+						</div>
+					</div>
+				</div>
+				<div id="content-wrapper">
+					<div id="activity">
+						<div id="activity-text">Playing a game</div>
+						<div id="content">
+							<div id="image-wrapper">
+								<img id="large-image" alt="large-text">
+								<img id="small-image" alt="small-text">
+							</div>
+							<div id="content-options">
+								<div id="name" title="name">name</div>
+								<div id="display-details" title="details"></div>
+								<div id="display-state">
+									<span id="value-state" title="state"></span>
+									<span id="display-party"></span>
+								</div>
+								<div id="timestamp"></div>
+							</div>
+						</div>
+						<div id="button-1-wrapper" class="button-wrapper">
+							<button id="button-1" class="button">
+								<div id="button-1-subwrapper" class="button-subwrapper">
+									<span id="button-1-content" class="button-content">Ask to join</span>
+								</div>
+							</button>
+						</div>
+						<div id="button-2-wrapper" class="button-wrapper">
+							<button id="button-2" class="button">
+								<div id="button-2-subwrapper" class="button-subwrapper">
+									<span id="button-2-content" class="button-content">Ask to join</span>
+								</div>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<script src='/static/scripts/index.js'></script>
 	</body>

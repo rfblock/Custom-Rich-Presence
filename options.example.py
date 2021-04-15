@@ -21,3 +21,4 @@ options = {
 	'instance': ''
 }
 client_id = '123456789012345678'
+application_name = 'name'
